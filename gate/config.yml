@@ -1,0 +1,12 @@
+config:
+  onlineMode: true
+
+  servers:
+    default: localhost:25566
+
+  try:
+    - default
+  forceKeyAuthentication: true
+  forwarding:
+    mode: velocity
+    velocitySecret: __SECRET__
