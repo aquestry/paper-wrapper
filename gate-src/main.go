@@ -1,7 +1,12 @@
 package main
 
-import "go.minekube.com/gate/cmd/gate"
+import (
+	"fmt"
+
+	"go.minekube.com/gate/cmd/gate"
+)
 
 func main() {
+	fmt.Println("custom gate!")
 	gate.Execute()
 }
