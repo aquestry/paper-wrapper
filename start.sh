@@ -2,9 +2,10 @@
 set -e
 
 RAM=${PAPER_RAM:-1G}
+SECRET=${VELOCITY_SECRET:-1234}
 
-sed -i "s/^ *secret:.*/    secret: \"$VELOCITY_SECRET\"/" paper/config/paper-global.yml
-sed -i "s/^ *velocitySecret:.*/    velocitySecret: \"$VELOCITY_SECRET\"/" gate/config.yml
+sed -i "s/^ *secret:.*/    secret: \"$SECRET\"/" paper/config/paper-global.yml
+sed -i "s/^ *velocitySecret:.*/    velocitySecret: \"$SECRET\"/" gate/config.yml
 echo "eula=true" > paper/eula.txt
 
 cd gate

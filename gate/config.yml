@@ -1,6 +1,6 @@
 config:
   onlineMode: true
-
+  acceptTransfers: true
   servers:
     default: localhost:25566
 
